@@ -2,14 +2,23 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { BrowserRouter } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import User from "./components/Pages/User/User"
+import Admin from "./components/Pages/Admin/Admin"
+import HomePage from "./components/Layouts/Home/HomePage"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <Router>
+      <Routes>
+        <Route path='/' element={<App />}>
+          <Route index element={<HomePage />} />
+          <Route path='users' element={<User />} />
+          <Route path='admin' element={<Admin />} />
+        </Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
 )
 
