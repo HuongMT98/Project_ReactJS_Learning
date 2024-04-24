@@ -1,20 +1,7 @@
-import { Outlet } from "react-router-dom"
 import "./App.css"
-import Header from "./components/Layouts/Header/Header"
 
 function App() {
-  return (
-    <div className='app-container'>
-      <div className='header-container'>
-        <Header />
-      </div>
-      <div className='main-container'>
-        <div className='navside-container'>
-          <Outlet />
-        </div>
-      </div>
-    </div>
-  )
+  return <div className='app-container'></div>
 }
 
 export default App
