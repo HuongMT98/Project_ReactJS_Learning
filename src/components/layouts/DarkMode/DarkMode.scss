@@ -1,0 +1,14 @@
+.btn-darkmode {
+  padding: 1.5rem 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  button {
+    font-size: 1.5rem;
+    padding: 0.4rem 2rem;
+    border: none !important;
+    border-radius: 10px;
+    background: rgb(218, 212, 212);
+  }
+}

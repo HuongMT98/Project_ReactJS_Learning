@@ -3,8 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: black;
-  color: white;
 }
 a {
   text-decoration: none;
@@ -43,4 +41,11 @@ li {
 
 *::-webkit-scrollbar-thumb:active {
   background-color: #4900ff;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --bg-white: #fff;
+  --bg-black: #000;
 }
