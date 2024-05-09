@@ -1,7 +1,11 @@
-import "./App.css"
+import Home from "./components/layouts/Home/Home"
 
 function App() {
-  return <div className='app-container'></div>
+  return (
+    <div className='App'>
+      <Home />
+    </div>
+  )
 }
 
 export default App
